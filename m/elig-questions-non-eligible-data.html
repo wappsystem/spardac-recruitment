@@ -14,7 +14,7 @@
       m.fields=""+fields+",Submit_date,Submitted_by,_Delete";
       //-------------------------------------
       m.load=function(){
-        m.query={"Data.first_name":""}
+        m.query={"Data.Eligible":{"$ne" : "Yes"}}
       }
   }
 </script>
